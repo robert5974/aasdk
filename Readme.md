@@ -16,8 +16,8 @@ sudo apt-get install -y protobuf-compiler libprotobuf-dev libusb-1.0.0-dev libss
 git clone https://github.com/OpenDsh/aasdk
 
 cd aasdk
-cmake -DCMAKE_BUILD_TYPE=Release .
-make -j2
+cmake .
+make
 sudo make install
 ```
 
