@@ -5,13 +5,14 @@
 C++ object-oriented library containing implementation of core AndroidAuto(tm) functionalities needed to build headunit software.
 
 ### Build Guide
-#### Local build instructions for Raspberry Pi
+
 #### Building all components of OpenDash should be in the following order:
 1. aasdk
 2. qt-gstreamer
 3. OpenAuto
 4. Dash
 
+#### Local build instructions for Raspberry Pi
 ```
 sudo apt-get update
 sudo apt-get -y install cmake build-essential git
