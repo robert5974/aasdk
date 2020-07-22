@@ -13,20 +13,37 @@ C++ object-oriented library containing implementation of core AndroidAuto(tm) fu
 4. Dash
 
 #### Local build instructions for Raspberry Pi
+
+**1. Install the pre-requisite packages:**
 ```
 sudo apt-get update
 sudo apt-get -y install cmake build-essential git
 
 sudo apt-get install -y protobuf-compiler libprotobuf-dev libusb-1.0.0-dev libssl-dev libboost-dev libboost-system-dev libboost-log-dev
-
+```
+**2. Clone the aasdk repo:**
+```
 git clone https://github.com/OpenDsh/aasdk
-
+```
+**3. Change to the cloned directory:**
+```
 cd aasdk
+```
+**5. Run the following _cmake_ command:**
+```
 cmake .
+```
+**6. Compile aasdk:**
+```
 make
+```
+**7. Install:**
+```
 sudo make install
 ```
+
 ### After completion of install, move on to building qt-gstreamer
+
 ### Supported functionalities
  - AOAP (Android Open Accessory Protocol)
  - USB transport
