@@ -1,11 +1,16 @@
 
-# aasdk
+# AASDK
 
 ### Brief description
 C++ object-oriented library containing implementation of core AndroidAuto(tm) functionalities needed to build headunit software.
 
 ### Build Guide
 #### Local build instructions for Raspberry Pi
+#### Building all components of OpenDash should be in the following order:
+1. aasdk
+2. qt-gstreamer
+3. OpenAuto
+4. Dash
 
 ```
 sudo apt-get update
@@ -20,7 +25,7 @@ cmake .
 make
 sudo make install
 ```
-
+### After completion of install, move on to building qt-gstreamer
 ### Supported functionalities
  - AOAP (Android Open Accessory Protocol)
  - USB transport
